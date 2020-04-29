@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-// eslint-disable-next-line no-undef
 class App extends Component {
   render() {
-    return <div><h1>Hello,World</h1></div>;
+    return(
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+        <input type="text" onClick={() => {console.log("I clicked")}}  />;
+      </React.Fragment>
+    ) 
   }
 }
 
